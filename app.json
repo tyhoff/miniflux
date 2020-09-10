@@ -1,0 +1,21 @@
+{
+  "name": "Miniflux",
+  "description": "Miniflux is a minimalist and opinionated feed reader",
+  "website": "https://miniflux.app/",
+  "repository": "https://github.com/miniflux/miniflux",
+  "env": {
+    "RUN_MIGRATIONS": "1",
+    "ADMIN_USERNAME": {
+      "description": "Admin username.",
+      "value": "admin"
+    },
+    "ADMIN_PASSWORD": {
+      "description": "Auto-generated admin password",
+      "value": "bad_password"
+    },
+    "CREATE_ADMIN": "1"
+  },
+  "addons": [
+      "heroku-postgresql"
+  ]
+}
